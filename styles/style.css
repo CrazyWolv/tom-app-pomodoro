@@ -56,7 +56,7 @@ body{
     display:block;
     margin: auto;
     padding:5px 15px;
-    background-color: brown;
+    background-color: rgb(165, 42, 42);
     color:white;
     font-size:20px;
     border-radius: 5px;
@@ -67,6 +67,20 @@ body{
     cursor:pointer;
     border-right:3px solid black;
     border-bottom:3px solid black;
+} .header-settings--gear--desc--form-errorMessage{
+    display:hidden;
+} .header-settings--gear--desc--form-errorMessage.isShown{
+    display:block;
+    background-color: rgba(165, 42, 42, 0.5);
+    color:white;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    max-width:280px;
+    padding:5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 main{
