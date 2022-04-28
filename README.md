@@ -5,6 +5,6 @@
 Tom'App is a French (srry guys) app for Pomodoro. I wanted to try to make a Pomodoro app myself !
 
 ## Workflow & Techs used
-I used a mobile-first worflow with only HTML5, CSS3, JavaScript... and fontawesome package for icons, of course.
+I used a mobile-first worflow with only HTML5, CSS3, JavaScript... and fontawesome package for icons, of course. No frameworks. At all.
 
 -> currently work in progress
