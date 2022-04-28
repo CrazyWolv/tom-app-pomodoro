@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-touch-icon.png" >
+    <title>Tom'App - votre app Pomodoro !</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-settings">
+            <div class="header-settings--gear">
+                <div id="settingsGear" class="header-settings--gear--icon"><i id="icon" class="fa fa-gear"></i></div>
+                <div id="settingsWindow" class="header-settings--gear--desc">
+                    <form id="settingsForm" class="header-settings--gear--desc--form">
+                        <label class="header-settings--gear--desc--form--label" for="numberOfPomodoro">
+                            J'aimerais faire
+                            <input class="header-settings--gear--desc--form--label-input" id="numberOfPomodoro" name="numberOfPomodoro" type="number" value="" required /> Pomodoro(s)
+                        </label>
+                        <label class="header-settings--gear--desc--form--label" for="pomodoroMinutes">
+                            de
+                            <input class="header-settings--gear--desc--form--label-input" id="pomodoroMinutes" name="pomodoroMinutes" type="number" value="" required /> minutes, avec des
+                        </label>
+                        <label class="header-settings--gear--desc--form--label" for="breakTime">
+                            pauses de
+                            <input class="header-settings--gear--desc--form--label-input" id="breakTime" name="breakTime" type="number" value="" required /> minutes   
+                        </label>
+                        <!-- <p>Nombre de Pomodoro : 4</p>
+                        <p>Temps du Pomodoro : 30mn</p>
+                        <p>Temps de Pause : 5mn</p> -->
+                        <button id="submitButton" class="header-settings--gear--desc--form--submitButton" type="submit">🚀 C'est parti !</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <h1 class="main-container--title">Tom'App</h1>
+        <section class="main-container--desc"><span class="italic-span">Tom'App</span> est une application <span class="bold-span">Pomodoro</span> qui vous permettra de gérer vous-même le nombre et la durée de vos Pomodoro ainsi que le temps de pause !</section>
+
+        <section id="counters" class="main-container--counters">
+            <div id="pomodoro-counter" class="main-container--counters--pomodoro">
+                Pomodoro - n°<span id="pomodoro--current" class="main-container--counters--pomodoro--emphase">1</span> / <span id="pomodoro--total">4</span>
+            </div>
+
+            <div id="counter" class="main-container--counters--counter">
+                <div id="counter-inside" class="main-container--counters--counter-inside">
+                    <span id="counter--minutes">25</span> min 34 s
+                </div>
+            </div>
+
+            <div id="break-counter" class="main-container--counters--break">
+                Temps de pause restant :
+                <span class="main-container--counters--break--emphase"><span id="break--minutes">4</span> min 25 s</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+<script src="./scripts/script.js"></script>
+<script src="https://kit.fontawesome.com/8afc2171ad.js" crossorigin="anonymous"></script>
+</html>
